@@ -1,17 +1,15 @@
 # Forecasting using SPSS; Big Mart Sales III Data
 
 Forecasting Sales data using Hackathon data from www.analyticsvidhya.com
+***
 
- 
-
-##Problem Statement
+## Problem Statement
 
 The data scientists at BigMart have collected 2013 sales data for 1559 products across 10 stores in different cities. The aim is to build a predictive model and find out the sales of each product at a particular store.
 
 There is a train (8523) and a test (5681) data set. The train data set has both input and output variable(s). Sales figures for the test set are predicted.
 
-##Variables
-
+## Variables
 This dataset has the following variables:
 
 Item_Identifier: Unique product ID
@@ -40,8 +38,8 @@ Item_Outlet_Sales: Sales of the product in the particulat store. This is the out
 
 Cleaning, transformation and analysis is done using SPSS software. The SPSS syntax I have used is included in this repository. In this section I will further elaborate on my approach.
 
-##Explorative analysis
-
+## Explorative analysis
+***
 After Downloading the train and test dataset, the two datasets are merged. A variable is added to identify which cases belong to which of the two datasets.
 
 Next an explorative data analysis is conducted on the total dataset. Descriptive statistics (Mean, standard deviation, min, max) is calculated for the metric variables. Descriptive statistics (Mode, mean, max and frequency tables) are also calculated for the categorical variables.
@@ -66,9 +64,9 @@ Other things that stand out after this explorative analysis:
 
 -There are a few variables that are heavily skewed (Item_visibility, Item_Weight and Item_MRP as well as the dependent variable Item_Outlet_Sales
 
-##Data cleaning
-
-###Dealing with missing variables:
+## Data cleaning
+***
+### Dealing with missing variables:
 
 -Missing values in item_weight are replaced by its mean (12.85765)
 
@@ -84,7 +82,7 @@ The categories of Item_type have been reformatted to three categories: Food, Dri
 
 The variable Establishment year has been computed into ‘Years of Operation’ by calculating 2019-‘Establisment year’.
 
-###Creating dummy variables
+### Creating dummy variables
 
 As I intend to conduct a multiple regression on the variables I have created dummy variables for categorical variables with more than 2 categories, as in multiple regression only dichotomous variables can be included.
 
@@ -110,4 +108,5 @@ SQRT_ItemMRP
 
 SQRT_OutletSales
 
-##Multiple regression analysis
+## Multiple regression analysis
+***
